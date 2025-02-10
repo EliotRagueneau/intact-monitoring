@@ -1,0 +1,134 @@
+//  --- HARLOW TEST ---
+
+### IntAct GraphDB Dev 1
+POST http://intact-neo4j-001-hl.ebi.ac.uk:7474/db/data/cypher
+Authorization: Basic neo4j neo4j123
+Content-Type: application/json
+
+{
+  "query": "MATCH (n:GraphPublication) return count(n);"
+}
+
+> check-status-code.js
+
+### IntAct Graph WS Dev 1
+GET http://ves-hx-47:8083/intact/ws/graph/interaction/details/EBI-1003958
+
+> check-status-code.js
+
+### IntAct Solr - Test Harlow - 1 - Interactions
+GET http://hh-rke-wp-webadmin-68-worker-1.caas.ebi.ac.uk:31243/solr/interactions/select?q=*:*&rows=0
+
+> check-status-code.js
+
+### IntAct Solr - Test Harlow - 2 - Interactions
+GET http://hh-rke-wp-webadmin-68-worker-2.caas.ebi.ac.uk:31243/solr/interactions/select?q=*:*&rows=0
+
+> check-status-code.js
+
+### IntAct Solr - Test Harlow - 3 - Interactions
+GET http://hh-rke-wp-webadmin-68-worker-3.caas.ebi.ac.uk:31243/solr/interactions/select?q=*:*&rows=0
+
+> check-status-code.js
+
+### IntAct Solr - Test Harlow - 1 - Interactors
+GET http://hh-rke-wp-webadmin-68-worker-1.caas.ebi.ac.uk:31243/solr/interactors/select?q=*:*&rows=0
+
+> check-status-code.js
+
+### IntAct Solr - Test Harlow - 2 - Interactors
+GET http://hh-rke-wp-webadmin-68-worker-2.caas.ebi.ac.uk:31243/solr/interactors/select?q=*:*&rows=0
+
+> check-status-code.js
+
+### IntAct Solr - Test Harlow - 3 - Interactors
+GET http://hh-rke-wp-webadmin-68-worker-3.caas.ebi.ac.uk:31243/solr/interactors/select?q=*:*&rows=0
+
+> check-status-code.js
+
+### IntAct interactor - Test Harlow - 1
+GET http://hh-rke-wp-webadmin-68-worker-1.caas.ebi.ac.uk:31234/intact/ws/interactor/countTotal
+
+> check-status-code.js
+
+### IntAct interactor - Test Harlow - 2
+GET http://hh-rke-wp-webadmin-68-worker-2.caas.ebi.ac.uk:31234/intact/ws/interactor/countTotal
+
+> check-status-code.js
+
+### IntAct interactor - Test Harlow - 3
+GET http://hh-rke-wp-webadmin-68-worker-3.caas.ebi.ac.uk:31234/intact/ws/interactor/countTotal
+
+> check-status-code.js
+
+### IntAct interaction - Test Harlow - 1
+GET http://hh-rke-wp-webadmin-68-worker-1.caas.ebi.ac.uk:31235/intact/ws/interaction/countTotal
+
+> check-status-code.js
+
+### IntAct interaction - Test Harlow - 2
+GET http://hh-rke-wp-webadmin-68-worker-2.caas.ebi.ac.uk:31235/intact/ws/interaction/countTotal
+
+> check-status-code.js
+
+### IntAct interaction - Test Harlow - 3
+GET http://hh-rke-wp-webadmin-68-worker-3.caas.ebi.ac.uk:31235/intact/ws/interaction/countTotal
+
+> check-status-code.js
+
+### IntAct network - Test Harlow - 1
+POST http://hh-rke-wp-webadmin-68-worker-1.caas.ebi.ac.uk:31236/intact/ws/network/getInteractions?query=EBI-1003958
+
+> check-status-code.js
+
+### IntAct network - Test Harlow - 2
+POST http://hh-rke-wp-webadmin-68-worker-2.caas.ebi.ac.uk:31236/intact/ws/network/getInteractions?query=EBI-1003958
+
+> check-status-code.js
+
+### IntAct network - Test Harlow - 3
+POST http://hh-rke-wp-webadmin-68-worker-3.caas.ebi.ac.uk:31236/intact/ws/network/getInteractions?query=EBI-1003958
+
+> check-status-code.js
+
+### IntAct view - Test Harlow - 1
+GET http://hh-rke-wp-webadmin-68-worker-1.caas.ebi.ac.uk:31240/intact/
+
+> check-status-code.js
+
+### IntAct view - Test Harlow - 2
+GET http://hh-rke-wp-webadmin-68-worker-2.caas.ebi.ac.uk:31240/intact/
+
+> check-status-code.js
+
+### IntAct view - Test Harlow - 3
+GET http://hh-rke-wp-webadmin-68-worker-3.caas.ebi.ac.uk:31240/intact/
+
+> check-status-code.js
+
+//  --- PUBLIC URLS TEST ---
+
+### IntAct Graph WS - Dev
+GET https://wwwdev.ebi.ac.uk/intact/ws/graph/interaction/details/EBI-1003958
+
+> check-status-code.js
+
+### IntAct interactor - Test
+GET https://wwwdev.ebi.ac.uk/intact/test/ws/interactor/countTotal
+
+> check-status-code.js
+
+### IntAct interaction - Test
+GET https://wwwdev.ebi.ac.uk/intact/test/ws/interaction/countTotal
+
+> check-status-code.js
+
+### IntAct network - Test
+POST https://wwwdev.ebi.ac.uk/intact/test/ws/network/getInteractions?query=EBI-1003958
+
+> check-status-code.js
+
+### IntAct view - Test
+GET https://wwwdev.ebi.ac.uk/intact/beta/
+
+> check-status-code.js
