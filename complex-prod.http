@@ -1,66 +1,79 @@
 //  --- HARLOW PRODUCTION ---
 
 ### CP - Solr - Public 1
+// @timeout  2 s
 GET http://ves-pg-46.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public 2
+// @timeout  2 s
 GET http://ves-pg-47.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public 3
+// @timeout  2 s
 GET http://ves-pg-4f.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public 4
+// @timeout  2 s
 GET http://ves-pg-4d.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public Fallback 1
+// @timeout  2 s
 GET http://ves-oy-46.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public Fallback 2
+// @timeout  2 s
 GET http://ves-oy-47.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public Fallback 3
+// @timeout  2 s
 GET http://ves-oy-4f.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - Solr - Public Fallback 4
+// @timeout  2 s
 GET http://ves-oy-4d.ebi.ac.uk:8090/intact/solr/core_complex_pub/select/?q=*%3A*&start=0&rows=0
 
 > check-status-code.js
 
 ### CP - WS - Public 1
+// @timeout  2 s
 GET http://ves-pg-46.ebi.ac.uk:8110/intact/complex-ws/search/*?first=0&number=10&format=json
 
 > check-status-code.js
 
 ### CP - WS - Public 2
+// @timeout  2 s
 GET http://ves-pg-47.ebi.ac.uk:8110/intact/complex-ws/search/*?first=0&number=10&format=json
 
 > check-status-code.js
 
 ### CP - WS - Public Fallback 1
+// @timeout  2 s
 GET http://ves-oy-46.ebi.ac.uk:8110/intact/complex-ws/search/*?first=0&number=10&format=json
 
 > check-status-code.js
 
 ### CP - WS - Public Fallback 2
+// @timeout  2 s
 GET http://ves-oy-47.ebi.ac.uk:8110/intact/complex-ws/search/*?first=0&number=10&format=json
 
 > check-status-code.js
 
 ### CP - View - Public 1
+// @timeout  2 s
 GET http://ves-hx-47.ebi.ac.uk/complexportal/home
 
 > check-status-code.js
@@ -68,11 +81,13 @@ GET http://ves-hx-47.ebi.ac.uk/complexportal/home
 //  --- PUBLIC URLS ---
 
 ### CP - WS
+// @timeout  2 s
 GET https://www.ebi.ac.uk/intact/complex-ws/search/*?first=0&number=10&format=json
 
 > check-status-code.js
 
 ### CP - View
+// @timeout  2 s
 GET https://www.ebi.ac.uk/complexportal/home
 
 > check-status-code.js

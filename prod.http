@@ -1,6 +1,7 @@
 //  --- HARLOW PRODUCTION ---
 
 ### IntAct GraphDB Prod 1
+// @timeout  2 s
 POST http://intact-neo4j-002-hl.ebi.ac.uk:7474/db/data/cypher
 Authorization: Basic neo4j neo4j123
 Content-Type: application/json
@@ -12,6 +13,7 @@ Content-Type: application/json
 > check-status-code.js
 
 ### IntAct GraphDB Prod 2
+// @timeout  2 s
 POST http://intact-neo4j-003-hl.ebi.ac.uk:7474/db/data/cypher
 Authorization: Basic neo4j neo4j123
 Content-Type: application/json
@@ -23,101 +25,121 @@ Content-Type: application/json
 > check-status-code.js
 
 ### IntAct Graph WS Prod 1
+// @timeout  2 s
 GET http://intact-neo4j-ws-002-hl:8083/intact/ws/graph/interaction/details/EBI-1003958
 
 > check-status-code.js
 
 ### IntAct Graph WS Prod 2
+// @timeout  2 s
 GET http://intact-neo4j-ws-003-hl:8083/intact/ws/graph/interaction/details/EBI-1003958
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Harlow - 1 - Interactions
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31263/solr/interactions/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Harlow - 2 - Interactions
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31263/solr/interactions/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Harlow - 3 - Interactions
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31263/solr/interactions/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Harlow - 1 - Interactors
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31263/solr/interactors/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Harlow - 2 - Interactors
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31263/solr/interactors/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Harlow - 3 - Interactors
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31263/solr/interactors/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct interactor - Prod Harlow - 1
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31244/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interactor - Prod Harlow - 2
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31244/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interactor - Prod Harlow - 3
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31244/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction - Prod Harlow - 1
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31247/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction - Prod Harlow - 2
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31247/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction - Prod Harlow - 3
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31247/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct network - Prod Harlow - 1
+// @timeout  2 s
 POST http://hh-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31246/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct network - Prod Harlow - 2
+// @timeout  2 s
 POST http://hh-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31246/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct network - Prod Harlow - 3
+// @timeout  2 s
 POST http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31246/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct view - Prod Harlow - 1
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31241/intact/
 
 > check-status-code.js
 
 ### IntAct view - Prod Harlow - 2
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31241/intact/
 
 > check-status-code.js
 
 ### IntAct view - Prod Harlow - 3
+// @timeout  2 s
 GET http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31241/intact/
 
 > check-status-code.js
@@ -125,91 +147,109 @@ GET http://hh-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31241/intact/
 //  --- HINXTON PRODUCTION ---
 
 ### IntAct Solr - Prod Hinxton - 1 - Interactions
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31263/solr/interactions/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Hinxton - 2 - Interactions
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31263/solr/interactions/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Hinxton - 3 - Interactions
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31263/solr/interactions/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Hinxton - 1 - Interactors
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31263/solr/interactors/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Hinxton - 2 - Interactors
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31263/solr/interactors/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct Solr - Prod Hinxton - 3 - Interactors
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31263/solr/interactors/select?q=*:*&rows=0
 
 > check-status-code.js
 
 ### IntAct interactor - Prod Hinxton - 1
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31244/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interactor - Prod Hinxton - 2
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31244/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interactor - Prod Hinxton - 3
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31244/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction - Prod Hinxton - 1
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31247/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction - Prod Hinxton - 2
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31247/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction - Prod Hinxton - 3
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31247/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct network - Prod Hinxton - 1
+// @timeout  2 s
 POST http://hx-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31246/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct network - Prod Hinxton - 2
+// @timeout  2 s
 POST http://hx-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31246/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct network - Prod Hinxton - 3
+// @timeout  2 s
 POST http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31246/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct view - Prod Hinxton - 1
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-1.caas.ebi.ac.uk:31241/intact/
 
 > check-status-code.js
 
 ### IntAct view - Prod Hinxton - 2
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-2.caas.ebi.ac.uk:31241/intact/
 
 > check-status-code.js
 
 ### IntAct view - Prod Hinxton - 3
+// @timeout  2 s
 GET http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31241/intact/
 
 > check-status-code.js
@@ -217,26 +257,31 @@ GET http://hx-rke-wp-webadmin-24-worker-3.caas.ebi.ac.uk:31241/intact/
 //  --- PUBLIC URLS ---
 
 ### IntAct Graph WS - Dev
+// @timeout  2 s
 GET https://www.ebi.ac.uk/intact/ws/graph/interaction/details/EBI-1003958
 
 > check-status-code.js
 
 ### IntAct interactor
+// @timeout  2 s
 GET https://www.ebi.ac.uk/intact/ws/interactor/countTotal
 
 > check-status-code.js
 
 ### IntAct interaction
+// @timeout  2 s
 GET https://www.ebi.ac.uk/intact/ws/interaction/countTotal
 
 > check-status-code.js
 
 ### IntAct network
+// @timeout  2 s
 POST https://www.ebi.ac.uk/intact/ws/network/getInteractions?query=EBI-1003958
 
 > check-status-code.js
 
 ### IntAct view
+// @timeout  2 s
 GET https://www.ebi.ac.uk/intact/home
 
 > check-status-code.js
